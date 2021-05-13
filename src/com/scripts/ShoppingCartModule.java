@@ -11,7 +11,7 @@ import com.pages.ShoppingCart;
 public class ShoppingCartModule extends TestBase {
 
 	@Test
-	public void cartDetails() throws Exception
+	public void cartDetails() throws Exception // Cart Details 
 	{
 		ShoppingCart SC= new ShoppingCart(driver);
 

@@ -12,10 +12,11 @@ public class Login extends TestBase {
 	  
 		String DocumentName ="InputData";
 		String SheetName="LoginScreen";
-	@Test
-	public void PassCrendentials() throws Exception
-	{
 		LoginScreen LS= new LoginScreen(driver);
+		
+	@Test
+	public void PassCredentials() throws Exception // Giving the Login Credentials
+	{
 		LS.verifyLoginScreen();
 	
 		LS.enterEmail(Readexcel(DocumentName,SheetName, 2, 2));

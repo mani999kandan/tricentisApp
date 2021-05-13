@@ -5,9 +5,8 @@
     <classes>
       <class name="com.scripts.MainPage"/>
       <class name="com.scripts.Login"/>
-      
-          <class name="com.scripts.PurchaseModule"/>
-   <class name="com.scripts.ShoppingCartModule"/>
+      <class name="com.scripts.PurchaseModule"/>
+  	 <class name="com.scripts.ShoppingCartModule"/>
       <class name="com.scripts.CheckoutModule"/>
       
     </classes>

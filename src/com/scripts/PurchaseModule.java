@@ -13,13 +13,14 @@ public class PurchaseModule extends TestBase {
 
 
 public static Float Totalvalue;
+
 	@Test
-	public void OrderBook() throws Exception
+	public void OrderBook() throws Exception //Booking the orders
 	{
 		String DocumentName ="InputData";
 		String SheetName="PurchaseModule";
 		String SheetName1="LoginScreen";
-		String result ;
+	
 	
 		Purchase pm= new Purchase(driver);
 		
@@ -44,15 +45,9 @@ public static Float Totalvalue;
 		String pricevalue =pm.getPriceDetails();
 		System.out.println(pricevalue);
 
-		  Totalvalue = Float.parseFloat(pricevalue) * Float.parseFloat(Quantity);
-		
-	
-        
-		
-
+		Totalvalue = Float.parseFloat(pricevalue) * Float.parseFloat(Quantity);
 		System.out.println("Subtotal:" +Totalvalue);
-		
-		
+
 		pm.clickCartBtn();
 		pm.verifyCartMessage();
 		pm.clickCartLink();

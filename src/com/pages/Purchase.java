@@ -37,7 +37,7 @@ public class Purchase extends TestBase {
 	@FindBy(xpath="//input[@name='removefromcart']") WebElement removeCart;
 	@FindBy(name="updatecart") WebElement updateCart;
 
-	public void verifyAccountID(String emailAddress) throws InterruptedException
+	public void verifyAccountID(String emailAddress) 
 	{
 		 wait.until(ExpectedConditions.elementToBeClickable(accountID));
 			

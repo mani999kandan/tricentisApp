@@ -10,13 +10,15 @@ import com.pages.ShoppingCart;
 
 
 public class CheckoutModule extends TestBase {
+	
 	String DocumentName ="InputData";
 	String SheetName="CheckOut";
-	@Test (priority=1)
+	CheckoutScreen CS= new CheckoutScreen(driver);
+	
+	@Test (priority=1) // Bill Address of the Order
 	public void billAddressDetails() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
-
+		
 		CS.selectAddress();
 		CS.enterFirstName(Readexcel(DocumentName,SheetName, 2, 2));
 		CS.enterLastName(Readexcel(DocumentName,SheetName, 3, 2));
@@ -24,48 +26,45 @@ public class CheckoutModule extends TestBase {
 		CS.enterCity(Readexcel(DocumentName,SheetName, 5, 2));
 		CS.enterAddress1(Readexcel(DocumentName,SheetName, 6, 2));
 		CS.enterZipCode(Readexcel(DocumentName,SheetName, 7, 2));
-		
-		String s=Readexcel(DocumentName,SheetName, 8, 2);
-	System.out.println(s);
-		CS.enterphoneNumber(s);
+		CS.enterphoneNumber(Readexcel(DocumentName,SheetName, 8, 2));
 		CS.clickContinebtn();
 	}
-	@Test (priority=2)
+	
+	
+	@Test (priority=2)// Shipping Address of the Order
 	public void shippingAddress() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
 		
 		CS.clickShippingAddress(Readexcel(DocumentName,SheetName, 2, 2),Readexcel(DocumentName,SheetName, 3, 2),Readexcel(DocumentName,SheetName, 6, 2),Readexcel(DocumentName,SheetName, 5, 2),Readexcel(DocumentName,SheetName, 7, 2),Readexcel(DocumentName,SheetName, 4, 2));
 		CS.clickShippingAddressConti();
 	}	
-	@Test (priority=3)
+	
+	
+	@Test (priority=3)// Shipping Method
 	public void shippingMethod() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
+		
 		
 		CS.clickShippingMethod();
 		CS.clickShippingMethodConti();
 	}	
-	@Test (priority=4)
+	@Test (priority=4)// Payment Method
 	public void paymentMethod() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
 		
 		CS.clickPaymentMethod();
 		CS.clickContinueButtonPaymentMethod();
 	}	
-	@Test (priority=5)
+	@Test (priority=5)// Payment Information
 	public void paymentInformation() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
 		
 		CS.verifyPaymentText();
 		CS.clickContinueButtonPaymentInform();
 	}
-	@Test (priority=6)
+	@Test (priority=6)// Confirm Order
 	public void confirmOrder() throws Exception
 	{
-		CheckoutScreen CS= new CheckoutScreen(driver);
 		
 		CS.clickConfirmOrderBtn();
 		CS.verifyCheckOutText();

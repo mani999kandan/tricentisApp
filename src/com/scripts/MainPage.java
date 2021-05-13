@@ -10,10 +10,11 @@ import com.pages.MainScreen;
 
 public class MainPage extends TestBase {
 
+	MainScreen ms= new MainScreen(driver);
+	
 	@Test
-	public void Dashboard() throws Exception
+	public void Dashboard() // Click on Login Link
 	{
-		MainScreen ms= new MainScreen(driver);
 		ms.clickLoginLink();
 	}
 }

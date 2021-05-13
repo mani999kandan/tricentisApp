@@ -21,7 +21,7 @@ public class MainScreen extends TestBase {
 	//----- Log out
 	@FindBy(linkText="Log out") WebElement logOut;
 	
-	public void clickLoginLink() throws Exception
+	public void clickLoginLink()
 	{
 		logIn.click();
 
