@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="8" total="18" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="34660" started-at="2021-05-13T18:11:29 IST" finished-at="2021-05-13T18:12:04 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="34660" started-at="2021-05-13T18:11:29 IST" finished-at="2021-05-13T18:12:04 IST">
+      <class name="com.scripts.CheckoutModule">
+        <test-method status="PASS" signature="billAddressDetails()[pri:1, instance:com.scripts.CheckoutModule@337bbfdf]" name="billAddressDetails" duration-ms="1303" started-at="2021-05-13T18:11:48 IST" finished-at="2021-05-13T18:11:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- billAddressDetails -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:48 IST" finished-at="2021-05-13T18:11:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.billAddressDetails() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="205" started-at="2021-05-13T18:11:49 IST" finished-at="2021-05-13T18:11:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=billAddressDetails status=SUCCESS method=CheckoutModule.billAddressDetails()[pri:1, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="shippingAddress()[pri:2, instance:com.scripts.CheckoutModule@337bbfdf]" name="shippingAddress" duration-ms="4279" started-at="2021-05-13T18:11:49 IST" finished-at="2021-05-13T18:11:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingAddress -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:49 IST" finished-at="2021-05-13T18:11:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.shippingAddress() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="126" started-at="2021-05-13T18:11:53 IST" finished-at="2021-05-13T18:11:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shippingAddress status=SUCCESS method=CheckoutModule.shippingAddress()[pri:2, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="shippingMethod()[pri:3, instance:com.scripts.CheckoutModule@337bbfdf]" name="shippingMethod" duration-ms="901" started-at="2021-05-13T18:11:53 IST" finished-at="2021-05-13T18:11:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shippingMethod -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:53 IST" finished-at="2021-05-13T18:11:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.shippingMethod() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="137" started-at="2021-05-13T18:11:54 IST" finished-at="2021-05-13T18:11:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=shippingMethod status=SUCCESS method=CheckoutModule.shippingMethod()[pri:3, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="paymentMethod()[pri:4, instance:com.scripts.CheckoutModule@337bbfdf]" name="paymentMethod" duration-ms="924" started-at="2021-05-13T18:11:55 IST" finished-at="2021-05-13T18:11:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentMethod -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:55 IST" finished-at="2021-05-13T18:11:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.paymentMethod() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="164" started-at="2021-05-13T18:11:55 IST" finished-at="2021-05-13T18:11:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentMethod status=SUCCESS method=CheckoutModule.paymentMethod()[pri:4, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:56 IST" finished-at="2021-05-13T18:11:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.paymentInformation() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="paymentInformation()[pri:5, instance:com.scripts.CheckoutModule@337bbfdf]" name="paymentInformation" duration-ms="3304" started-at="2021-05-13T18:11:56 IST" finished-at="2021-05-13T18:11:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentInformation -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="163" started-at="2021-05-13T18:11:59 IST" finished-at="2021-05-13T18:11:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentInformation status=SUCCESS method=CheckoutModule.paymentInformation()[pri:5, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="confirmOrder()[pri:6, instance:com.scripts.CheckoutModule@337bbfdf]" name="confirmOrder" duration-ms="4519" started-at="2021-05-13T18:11:59 IST" finished-at="2021-05-13T18:12:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:59 IST" finished-at="2021-05-13T18:11:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.CheckoutModule.confirmOrder() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.CheckoutModule@337bbfdf]" name="failure" is-config="true" duration-ms="183" started-at="2021-05-13T18:12:04 IST" finished-at="2021-05-13T18:12:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmOrder status=SUCCESS method=CheckoutModule.confirmOrder()[pri:6, instance:com.scripts.CheckoutModule@337bbfdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+      </class> <!-- com.scripts.CheckoutModule -->
+      <class name="com.scripts.Login">
+        <test-method status="PASS" signature="PassCrendentials()[pri:0, instance:com.scripts.Login@58472096]" name="PassCrendentials" duration-ms="2159" started-at="2021-05-13T18:11:31 IST" finished-at="2021-05-13T18:11:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PassCrendentials -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.Login@58472096]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:31 IST" finished-at="2021-05-13T18:11:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.Login.PassCrendentials() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.Login@58472096]" name="failure" is-config="true" duration-ms="90" started-at="2021-05-13T18:11:33 IST" finished-at="2021-05-13T18:11:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PassCrendentials status=SUCCESS method=Login.PassCrendentials()[pri:0, instance:com.scripts.Login@58472096] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+      </class> <!-- com.scripts.Login -->
+      <class name="com.scripts.ShoppingCartModule">
+        <test-method status="PASS" signature="cartDetails()[pri:0, instance:com.scripts.ShoppingCartModule@53e800f9]" name="cartDetails" duration-ms="2190" started-at="2021-05-13T18:11:45 IST" finished-at="2021-05-13T18:11:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartDetails -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.ShoppingCartModule@53e800f9]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:45 IST" finished-at="2021-05-13T18:11:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.ShoppingCartModule.cartDetails() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.ShoppingCartModule@53e800f9]" name="failure" is-config="true" duration-ms="121" started-at="2021-05-13T18:11:47 IST" finished-at="2021-05-13T18:11:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartDetails status=SUCCESS method=ShoppingCartModule.cartDetails()[pri:0, instance:com.scripts.ShoppingCartModule@53e800f9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+      </class> <!-- com.scripts.ShoppingCartModule -->
+      <class name="com.scripts.PurchaseModule">
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.PurchaseModule@a92be4f]" name="StartTest" is-config="true" duration-ms="0" started-at="2021-05-13T18:11:33 IST" finished-at="2021-05-13T18:11:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.PurchaseModule.OrderBook() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="OrderBook()[pri:0, instance:com.scripts.PurchaseModule@a92be4f]" name="OrderBook" duration-ms="12231" started-at="2021-05-13T18:11:33 IST" finished-at="2021-05-13T18:11:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderBook -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.PurchaseModule@a92be4f]" name="failure" is-config="true" duration-ms="101" started-at="2021-05-13T18:11:45 IST" finished-at="2021-05-13T18:11:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OrderBook status=SUCCESS method=PurchaseModule.OrderBook()[pri:0, instance:com.scripts.PurchaseModule@a92be4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+      </class> <!-- com.scripts.PurchaseModule -->
+      <class name="com.scripts.MainPage">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.scripts.MainPage@59072e9d]" name="launch" is-config="true" duration-ms="9290" started-at="2021-05-13T18:11:20 IST" finished-at="2021-05-13T18:11:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="StartTest(java.lang.reflect.Method)[pri:0, instance:com.scripts.MainPage@59072e9d]" name="StartTest" is-config="true" duration-ms="10" started-at="2021-05-13T18:11:29 IST" finished-at="2021-05-13T18:11:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.scripts.MainPage.Dashboard() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="Dashboard()[pri:0, instance:com.scripts.MainPage@59072e9d]" name="Dashboard" duration-ms="1138" started-at="2021-05-13T18:11:29 IST" finished-at="2021-05-13T18:11:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dashboard -->
+        <test-method status="PASS" signature="failure(org.testng.ITestResult)[pri:0, instance:com.scripts.MainPage@59072e9d]" name="failure" is-config="true" duration-ms="324" started-at="2021-05-13T18:11:30 IST" finished-at="2021-05-13T18:11:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Dashboard status=SUCCESS method=MainPage.Dashboard()[pri:0, instance:com.scripts.MainPage@59072e9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failure -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.scripts.MainPage@59072e9d]" name="close" is-config="true" duration-ms="1588" started-at="2021-05-13T18:12:04 IST" finished-at="2021-05-13T18:12:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.scripts.MainPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

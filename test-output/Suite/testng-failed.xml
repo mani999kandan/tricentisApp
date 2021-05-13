@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.scripts.ShoppingCartModule">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="StartTest"/>
+          <include name="cartDetails"/>
+          <include name="failure"/>
+        </methods>
+      </class> <!-- com.scripts.ShoppingCartModule -->
+      <class name="com.scripts.Login">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="StartTest"/>
+          <include name="PassCrendentials"/>
+          <include name="failure"/>
+        </methods>
+      </class> <!-- com.scripts.Login -->
+      <class name="com.scripts.PurchaseModule">
+        <methods>
+          <include name="launch"/>
+          <include name="OrderBook"/>
+          <include name="close"/>
+          <include name="StartTest"/>
+          <include name="failure"/>
+        </methods>
+      </class> <!-- com.scripts.PurchaseModule -->
+      <class name="com.scripts.CheckoutModule">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="confirmOrder"/>
+          <include name="shippingMethod"/>
+          <include name="StartTest"/>
+          <include name="paymentMethod"/>
+          <include name="paymentInformation"/>
+          <include name="billAddressDetails"/>
+          <include name="shippingAddress"/>
+          <include name="failure"/>
+        </methods>
+      </class> <!-- com.scripts.CheckoutModule -->
+      <class name="com.scripts.MainPage">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="StartTest"/>
+          <include name="Dashboard"/>
+          <include name="failure"/>
+        </methods>
+      </class> <!-- com.scripts.MainPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
