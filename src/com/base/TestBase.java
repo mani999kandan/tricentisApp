@@ -16,13 +16,16 @@ import org.testng.annotations.BeforeSuite;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase extends UtilsFile{
 	public static WebDriver driver;
 	@BeforeSuite
 	public void launch() throws Exception
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\TempoSmokeAutoCode\\Jenkins\\drivers\\chromedriver.exe");
+		   WebDriverManager.chromedriver().setup();
 		   driver=new ChromeDriver();
+			
 		   driver.get("http://demowebshop.tricentis.com/");
 		   driver.manage().window().maximize();
 			caps= ((RemoteWebDriver) driver).getCapabilities();

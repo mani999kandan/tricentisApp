@@ -6,7 +6,11 @@
   <name>SmokeTricentisApp</name>
   <description>SmokeTricentisApp</description>
     <dependencies>
-    
+  <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>3.7.1</version>
+    </dependency>
 
 <dependency>
   <groupId>org.testng</groupId>
