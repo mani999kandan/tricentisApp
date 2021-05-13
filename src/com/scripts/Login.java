@@ -23,6 +23,6 @@ public class Login extends TestBase {
 		LS.enterPassword(Readexcel(DocumentName,SheetName, 3, 2));
 		LS.clickLoginBtn();
 		
-		LS.verifyAccountID(Readexcel(DocumentName,SheetName, 2, 2));
+		
 	}
 }

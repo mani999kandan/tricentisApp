@@ -39,9 +39,14 @@ public class Purchase extends TestBase {
 
 	public void verifyAccountID(String emailAddress) throws InterruptedException
 	{
-		
+		 wait.until(ExpectedConditions.elementToBeClickable(accountID));
+			
 		
 		String Header = accountID.getText();
+		System.out.println(emailAddress);
+		System.out.println(Header);
+
+		
 		Assert.assertEquals(Header, emailAddress);
 		}
 	
@@ -79,10 +84,11 @@ public class Purchase extends TestBase {
 		cart.click();
 		 test.log(LogStatus.PASS,"Clicked Add Cart Button");
 			
-		Thread.sleep(2000);
+	
 		}
 	public void verifyCartMessage() throws InterruptedException
 	{
+		wait.until(ExpectedConditions.visibilityOf(cartMessage));
 		String expectedMessage = "The product has been added to your shopping cart";
 		cartMessage.isDisplayed();
 		String Header = cartMessage.getText();

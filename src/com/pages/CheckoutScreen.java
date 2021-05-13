@@ -83,7 +83,7 @@ public void enterLastName(String LName)
 {
 	lastName.clear();
 	lastName.sendKeys(LName);
-	test.log(LogStatus.PASS,"Entered Last Name: "+lastName);
+	test.log(LogStatus.PASS,"Entered Last Name: "+LName);
 		
 }
 public void enterMailAddress()
@@ -140,16 +140,17 @@ public void clickShippingAddress(String FN,String LN,String Add,String City,Stri
 {
 	String space=" ";
 	String comma=",";
-	String ShippingAddress=FN+space+LN+comma+Add+comma+City+space+Pincode+comma+Country;
-	Thread.sleep(3000);
+	String ShippingAddress=FN+space+LN+comma+space+Add+comma+space+City+space+Pincode+comma+space+Country;
+Thread.sleep(3000);
 	System.out.println(ShippingAddress);
 	Select s = new Select(sameShippingAddress);
 	 List<WebElement> lst = s.getOptions();
 	  for(WebElement options: lst)
       {
           
-      if(options.getText().equalsIgnoreCase(ShippingAddress))
+      if(options.getText().contains(ShippingAddress))
       {
+    	  
     	  options.click();
         break;
       }
@@ -206,7 +207,8 @@ public void clickContinueButtonPaymentMethod()
 //Payment Information
 public void verifyPaymentText() throws InterruptedException
 {
-	Thread.sleep(3000);
+	wait.until(ExpectedConditions.visibilityOf(paymentText));
+	
 	String str= paymentText.getText();
 	Assert.assertEquals(str, "You will pay by COD");
 	test.log(LogStatus.PASS,"Verified Payment Text: "+str);
@@ -223,9 +225,11 @@ public void clickContinueButtonPaymentInform()
 //Confirm Order
 public void clickConfirmOrderBtn()
 {
-	  test.log(LogStatus.PASS,test.addScreenCapture(GeneralScreenShot(driver)));  
 		
-	wait.until(ExpectedConditions.elementToBeClickable(confirmOrderBtn)).click();
+	WebElement s=wait.until(ExpectedConditions.elementToBeClickable(confirmOrderBtn));
+	  test.log(LogStatus.PASS,test.addScreenCapture(GeneralScreenShot(driver)));  
+	
+	s.click();
 	test.log(LogStatus.PASS,"Clicked on confirm Order Button");
 
 
@@ -233,7 +237,7 @@ public void clickConfirmOrderBtn()
 //Checkout Completed
 public void verifyCheckOutText() throws InterruptedException
 {
-	Thread.sleep(3000);
+	wait.until(ExpectedConditions.visibilityOf(successMessage));
 	String str = successMessage.getText();
 	Assert.assertEquals(str, "Your order has been successfully processed!");
 	test.log(LogStatus.PASS,"Verified Checkout Text " +str);

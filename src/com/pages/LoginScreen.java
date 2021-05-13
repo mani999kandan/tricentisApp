@@ -59,11 +59,5 @@ public void clickLoginBtn()
 }
 
 
-public void verifyAccountID(String emailAddress) throws InterruptedException
-{
-	
-	
-	String Header = accountID.getText();
-	Assert.assertEquals(Header, emailAddress);
-	}
+
 }

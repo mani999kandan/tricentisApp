@@ -35,7 +35,7 @@ public class CheckoutModule extends TestBase {
 	{
 		CheckoutScreen CS= new CheckoutScreen(driver);
 		
-		CS.clickShippingAddress(Readexcel(DocumentName,SheetName, 2, 2),Readexcel(DocumentName,SheetName, 3, 2),Readexcel(DocumentName,SheetName, 4, 2),Readexcel(DocumentName,SheetName, 5, 2),Readexcel(DocumentName,SheetName, 6, 2),Readexcel(DocumentName,SheetName, 7, 2));
+		CS.clickShippingAddress(Readexcel(DocumentName,SheetName, 2, 2),Readexcel(DocumentName,SheetName, 3, 2),Readexcel(DocumentName,SheetName, 6, 2),Readexcel(DocumentName,SheetName, 5, 2),Readexcel(DocumentName,SheetName, 7, 2),Readexcel(DocumentName,SheetName, 4, 2));
 		CS.clickShippingAddressConti();
 	}	
 	@Test (priority=3)
